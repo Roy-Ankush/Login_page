@@ -5,6 +5,10 @@
     text-decoration: none;
     border: none;
 }
+/* this effect look good on background image that i am using right now */
+body{
+  background-color: rgb(178, 5, 5);
+}
 
 .contbox{
     display: flex;
@@ -110,17 +114,70 @@ input{
 }
   }
 
-  /* writing media query for screen resloution less than 850px or for small devices */
-  @media(max-width: 850px) {
-    .left{
-      display: none;
-    }
-    .uncess{
-      display: inline-block;
-    }
-    
-    
+  @media (min-width: 650px) and (max-width: 850px) {
+    .left,.right{
+      width:48vw;
+      height: 80vh;
+      border: solid rgb(13, 13, 12) 2px;
+      text-align: center;
+      flex-wrap: wrap;
   }
+  input{
+    width: 38vw;
+  }
+  .btn-primary{
+    width: 38vw;
+  }
+  }
+  @media (min-width: 650px) and (max-width: 750px) {
+    .btn1 {
+      left: 20%;
+    }
+  }
+  
+
+
+  /* writing media query for screen resloution less than 850px or for small devices */
+  /* @media(max-width: 650px) {
+  .btn2l,.btn2r{
+    display: none;
+  }
+  .left,.right{
+    position: absolute;
+  }
+  .left{
+    border: solid rgb(223, 212, 212) 6px;
+  }
+  .uncess{
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 10px;
+    top: 10px;
+  }
+  .left,.right{
+    width:80vw;
+    height: 80vh;
+    border: solid rgb(13, 13, 12) 2px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+input{
+  width: 65vw;
+}
+.extra{
+  width: 65vw;
+}
+  }
+
+@media(max-width :300px){
+  input{
+    width: 75vw;
+  }
+  .extra{
+    width: 75vw;
+  }
+  } */
+
   
 
   
