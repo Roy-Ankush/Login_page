@@ -19,3 +19,13 @@ $("#btn1").on("click",show_login); //instead of show_login we will also write so
     $(".login").show();
 }
 
+// this ja is for mobile view
+$(".small1").on("click",()=>{
+    $(".login").show();
+    $(".signup").hide()
+})
+$(".small2").on("click",()=>{
+    $(".login").hide();
+    $(".signup").show()
+})
+
