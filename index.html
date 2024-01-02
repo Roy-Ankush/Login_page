@@ -10,21 +10,26 @@
 </head>
 <body>
     <div class="contbox">
-        <button type="button" class="btn small1 uncess btn-primary">Login</button>
-        <button type="button" class="btn small2 uncess btn-primary">signup</button>
+        <!-- <button type="button" class="btn small1 uncess btn-primary">Login</button>
+        <button type="button" class="btn small2 uncess btn-primary">signup</button> -->
 
 <!-- *************************this code is for left part******************************* -->
         <div class="left">
             <img src="image/wel.jpg" alt="Image" class="btn2l" id="btn0" >
                 <button class="btn1 btn2l" id="btn1">Press here for Login</button>
             <div class="login">
-                <form action="">
+                <form action="/submit" method="post">
                 <h1>Sign In</h1> <br>
-                <input type="email" class="one" placeholder="Email"> <br> <br>
-                <input type="password" class="one" placeholder="password"> <br><br>
+                <label for="mail"></label>
+                <input type="email" class="one x" placeholder="Email" name="mail" required> <br> <br>
+                <label for="pas"></label>
+                <input type="password" class="one x" placeholder="password" name="pas" required> <br><br>
                 <a href="" style="color: black;">forgot password?</a> <br><br>
-                <button type="button" class="btn extra btn-primary">Login</button> <br><br>
-            <hr><span>or</span><hr> <br><br>
+                <!-- <button type="button" class="btn extra btn-primary">Login</button> <br><br> -->
+                <label for="Login"></label>
+                <input type="submit" name="Login" id="" class="btn extra btn-primary" value="Login"> <br> <br>
+                <span id="notaccount">Don't have account? <u id="hel">Register</u> <br></span>
+            <hr><span>or</span><hr> <br> <br>
             <button type="button" class="btn extra btn-primary"><i class="bi bi-google"></i><span>  </span>Login with Google</button> <br><br>
             <button type="button" class="btn extra btn-primary"><i class="bi bi-linkedin"></i></i><span>  </span>Login with Linkedin</button> <br><br>
             </form>
@@ -33,15 +38,20 @@
 
 <!-- **********************the below part is for right side of page************************** -->
         <div class="right ">
-                <img src="image/login.jpg" alt="Image" class="btn2r" id="btn20">
+                <img src="image/lo1.jpg" alt="Image" class="btn2r" id="btn20">
                 <button class="btn1 btn2r" id="sig"> Press here for Sign up</button> 
             <div class="signup">
                 <form action="">
                 <h1>creat account</h1> <br>
-                <input type="text" placeholder="name"> <br><br>
-                <input type="email" placeholder="email"> <br><br>
-                <input type="password" placeholder="password"> <br><br>
-                <button type="button" class="btn extra small btn-primary">Signup</button> <br><br>
+                <label for="txt"></label>
+                <input type="text" class="one x" placeholder="name" name="txt" required> <br><br>
+                <label for="mail"></label>
+                <input type="email" class="one x" placeholder="email" name="mail" required> <br><br>
+                <label for="pas"></label>
+                <input type="password" class="one x" placeholder="password" name="pas" required> <br><br>
+                <!-- <button type="button" class="btn extra small btn-primary">Signup</button> <br><br> -->
+                <label for="signin"></label>
+                <input type="submit" name="signin" id="" class="btn extra btn-primary" value="Sign up"> <br> <br>
                  <!-- <button type="button" class="btn small btn-primary">Login</button> <br><br> -->
                 <hr><span>or</span><hr> <br> <br>
                 <button type="button" class="btn extra btn-primary"><i class="bi bi-google"></i><span>  </span>Signup with Google</button> <br><br>

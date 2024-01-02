@@ -26,6 +26,11 @@ $(".small1").on("click",()=>{
 })
 $(".small2").on("click",()=>{
     $(".login").hide();
-    $(".signup").show()
+    $(".signup").show();
 })
 
+$("#hel").on("click",()=>{
+    // $(".login").hide();
+    $(".left").hide();
+    $(".right").show();
+})
